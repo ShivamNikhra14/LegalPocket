@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Alerts - Legal Pocket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">⚖️</div>
+                <h1>Legal Pocket</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rights.html">Know Your Rights</a>
+                <a href="fraudalert.html" class="active">Fraud Alerts</a>
+                <a href="chatbot.html">AI Assistant</a>
+                <a href="documentation.html">Documentation</a>
+            </div>
+            <button class="cta-button" onclick="window.location.href='login.html'">Get Started</button>
+        </nav>
+    </header>
+
+    <!-- Fraud Alerts Section -->
+    <section class="fraud-alerts">
+        <div class="alerts-container">
+            <div class="alerts-header">
+                <h2>Latest Fraud Alerts</h2>
+                <p>Stay informed about emerging threats and protect yourself from becoming a victim</p>
+            </div>
+
+            <div class="alerts-grid">
+                <div class="alert-card critical">
+                    <div class="alert-badge">CRITICAL</div>
+                    <div class="alert-icon">🚨</div>
+                    <h3>UPI Payment Scam</h3>
+                    <p>New fraud where scammers send fake payment requests through UPI apps</p>
+                    <div class="alert-details">
+                        <span class="alert-date">Updated: Today</span>
+                        <span class="alert-severity">High Risk</span>
+                    </div>
+                    <button class="alert-action" onclick="showAlertDetails(1)">View Details</button>
+                </div>
+
+                <div class="alert-card high">
+                    <div class="alert-badge">HIGH</div>
+                    <div class="alert-icon">⚠️</div>
+                    <h3>Fake Investment Schemes</h3>
+                    <p>Fraudulent crypto and stock investment promises on social media</p>
+                    <div class="alert-details">
+                        <span class="alert-date">Updated: 2 days ago</span>
+                        <span class="alert-severity">Medium Risk</span>
+                    </div>
+                    <button class="alert-action" onclick="showAlertDetails(2)">View Details</button>
+                </div>
+
+                <div class="alert-card medium">
+                    <div class="alert-badge">MEDIUM</div>
+                    <div class="alert-icon">🔔</div>
+                    <h3>QR Code Scams</h3>
+                    <p>Fake parking payment QR codes being placed in public areas</p>
+                    <div class="alert-details">
+                        <span class="alert-date">Updated: 1 week ago</span>
+                        <span class="alert-severity">Medium Risk</span>
+                    </div>
+                    <button class="alert-action" onclick="showAlertDetails(3)">View Details</button>
+                </div>
+
+                <div class="alert-card medium">
+                    <div class="alert-badge">MEDIUM</div>
+                    <div class="alert-icon">🔔</div>
+                    <h3>Delivery Scam Messages</h3>
+                    <p>Fake delivery notifications asking for personal information</p>
+                    <div class="alert-details">
+                        <span class="alert-date">Updated: 3 days ago</span>
+                        <span class="alert-severity">Low Risk</span>
+                    </div>
+                    <button class="alert-action" onclick="showAlertDetails(4)">View Details</button>
+                </div>
+            </div>
+
+            <div class="prevention-tips">
+                <h3>Fraud Prevention Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🔐</div>
+                        <h4>Use Strong Passwords</h4>
+                        <p>Create unique passwords for different accounts and enable 2FA</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">📱</div>
+                        <h4>Verify Links</h4>
+                        <p>Always check URLs before clicking and never share OTPs</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🏦</div>
+                        <h4>Banking Safety</h4>
+                        <p>Use official banking apps and avoid public Wi-Fi for transactions</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">📧</div>
+                        <h4>Email Security</h4>
+                        <p>Don't open attachments from unknown senders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Details Modal -->
+    <div class="alert-modal" id="alertModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Alert Details</h3>
+                <button class="close-modal" onclick="closeAlertModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

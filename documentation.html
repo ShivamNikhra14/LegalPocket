@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Legal Pocket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">⚖️</div>
+                <h1>Legal Pocket</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rights.html">Know Your Rights</a>
+                <a href="fraudalert.html">Fraud Alerts</a>
+                <a href="chatbot.html">AI Assistant</a>
+                <a href="documentation.html" class="active">Documentation</a>
+            </div>
+            <button class="cta-button" onclick="window.location.href='login.html'">Get Started</button>
+        </nav>
+    </header>
+
+    <!-- Documentation Section -->
+    <section class="documentation">
+        <div class="doc-container">
+            <div class="doc-header">
+                <h2>Legal Documentation</h2>
+                <p>Access comprehensive legal documents, guides, and resources to protect your rights</p>
+            </div>
+            
+            <div class="doc-categories">
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All Documents</button>
+                    <button class="filter-btn" data-category="cyber">Cyber Laws</button>
+                    <button class="filter-btn" data-category="consumer">Consumer Rights</button>
+                    <button class="filter-btn" data-category="privacy">Privacy Laws</button>
+                    <button class="filter-btn" data-category="financial">Financial Fraud</button>
+                </div>
+            </div>
+
+            <div class="documents-grid">
+                <div class="doc-card" data-category="cyber">
+                    <div class="doc-icon">📄</div>
+                    <h3>Information Technology Act, 2000</h3>
+                    <p>Complete guide to cyber laws and digital rights in India</p>
+                    <div class="doc-meta">
+                        <span class="doc-size">2.4 MB</span>
+                        <span class="doc-pages">48 pages</span>
+                    </div>
+                    <button class="doc-download" data-pdf="it_act_2000.pdf">Download PDF</button>
+                </div>
+
+                <div class="doc-card" data-category="consumer">
+                    <div class="doc-icon">📄</div>
+                    <h3>Consumer Protection Act, 2019</h3>
+                    <p>Your rights as a consumer and how to file complaints</p>
+                    <div class="doc-meta">
+                        <span class="doc-size">1.8 MB</span>
+                        <span class="doc-pages">32 pages</span>
+                    </div>
+                    <button class="doc-download" data-pdf="consumer_protection_2019.pdf">Download PDF</button>
+                </div>
+
+                <div class="doc-card" data-category="privacy">
+                    <div class="doc-icon">📄</div>
+                    <h3>Digital Personal Data Protection Act</h3>
+                    <p>Understanding your data privacy rights and obligations</p>
+                    <div class="doc-meta">
+                        <span class="doc-size">3.1 MB</span>
+                        <span class="doc-pages">56 pages</span>
+                    </div>
+                    <button class="doc-download" data-pdf="data_protection_act.pdf">Download PDF</button>
+                </div>
+
+                <div class="doc-card" data-category="financial">
+                    <div class="doc-icon">📄</div>
+                    <h3>Financial Fraud Prevention Guide</h3>
+                    <p>Complete guide to identifying and preventing financial fraud</p>
+                    <div class="doc-meta">
+                        <span class="doc-size">2.1 MB</span>
+                        <span class="doc-pages">40 pages</span>
+                    </div>
+                    <button class="doc-download" data-pdf="fraud_prevention_guide.pdf">Download PDF</button>
+                </div>
+
+                <div class="doc-card" data-category="cyber">
+                    <div class="doc-icon">📄</div>
+                    <h3>Cyber Crime Investigation Manual</h3>
+                    <p>Procedures and protocols for cyber crime cases</p>
+                    <div class="doc-meta">
+                        <span class="doc-size">4.2 MB</span>
+                        <span class="doc-pages">72 pages</span>
+                    </div>
+                    <button class="doc-download" data-pdf="cyber_crime_manual.pdf">Download PDF</button>
+                </div>
+
+                <div class="doc-card" data-category="consumer">
+                    <div class="doc-icon">📄</div>
+                    <h3>E-commerce Consumer Rights</h3>
+                    <p>Your rights when shopping online and dispute resolution</p>
+                    <div class="doc-meta">
+                        <span class="doc-size">1.5 MB</span>
+                        <span class="doc-pages">28 pages</span>
+                    </div>
+                    <button class="doc-download" data-pdf="ecommerce_rights.pdf">Download PDF</button>
+                </div>
+            </div>
+
+            <div class="pdf-viewer-modal" id="pdfModal">
+                <div class="pdf-modal-content">
+                    <div class="pdf-modal-header">
+                        <h3 id="pdfTitle">Document Viewer</h3>
+                        <button class="close-modal" id="closeModal">&times;</button>
+                    </div>
+                    <div class="pdf-viewer" id="pdfViewer">
+                        <div class="pdf-placeholder">
+                            <div class="pdf-icon">📄</div>
+                            <p>PDF Viewer - Document would be displayed here</p>
+                            <p class="pdf-note">In a real implementation, this would show the actual PDF document</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

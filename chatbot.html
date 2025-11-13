@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Legal Assistant - Legal Pocket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">⚖️</div>
+                <h1>Legal Pocket</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rights.html">Know Your Rights</a>
+                <a href="fraudalert.html">Fraud Alerts</a>
+                <a href="chatbot.html" class="active">AI Assistant</a>
+                <a href="documentation.html">Documentation</a>
+            </div>
+            <button class="cta-button" onclick="window.location.href='login.html'">Get Started</button>
+        </nav>
+    </header>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot-page">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h2>AI Legal Assistant</h2>
+                <p>Get instant answers to your legal questions. Available 24/7.</p>
+            </div>
+            <div class="chatbot-interface">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>Hello! I'm your AI Legal Assistant. I'm here to help you understand your rights and guide you through legal situations. How can I assist you today?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-questions">
+                    <h4>Quick Questions:</h4>
+                    <div class="quick-buttons">
+                        <button class="quick-btn" data-question="What should I do if I'm a victim of online fraud?">Online Fraud Help</button>
+                        <button class="quick-btn" data-question="What are my consumer rights?">Consumer Rights</button>
+                        <button class="quick-btn" data-question="How to report cyber crime?">Report Cyber Crime</button>
+                        <button class="quick-btn" data-question="What is digital privacy?">Digital Privacy</button>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Type your legal question here..." class="chat-input">
+                    <button id="sendButton" class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

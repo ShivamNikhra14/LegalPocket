@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Rights - Legal Pocket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">⚖️</div>
+                <h1>Legal Pocket</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rights.html" class="active">Know Your Rights</a>
+                <a href="fraudalert.html">Fraud Alerts</a>
+                <a href="chatbot.html">AI Assistant</a>
+                <a href="documentation.html">Documentation</a>
+            </div>
+            <button class="cta-button" onclick="window.location.href='login.html'">Get Started</button>
+        </nav>
+    </header>
+
+    <!-- Rights Section -->
+    <section class="rights-section">
+        <div class="rights-container">
+            <div class="rights-header">
+                <h2>Know Your Rights</h2>
+                <p>Understanding your legal rights is the first step toward protection and justice</p>
+            </div>
+
+            <div class="rights-categories">
+                <div class="category-card" onclick="showRights('digital')">
+                    <div class="category-icon">💻</div>
+                    <h3>Digital Rights</h3>
+                    <p>Your rights in the digital world</p>
+                </div>
+                <div class="category-card" onclick="showRights('consumer')">
+                    <div class="category-icon">🛒</div>
+                    <h3>Consumer Rights</h3>
+                    <p>Protection as a consumer</p>
+                </div>
+                <div class="category-card" onclick="showRights('privacy')">
+                    <div class="category-icon">🔒</div>
+                    <h3>Privacy Rights</h3>
+                    <p>Your right to privacy</p>
+                </div>
+                <div class="category-card" onclick="showRights('financial')">
+                    <div class="category-icon">💰</div>
+                    <h3>Financial Rights</h3>
+                    <p>Banking and financial protection</p>
+                </div>
+            </div>
+
+            <div class="rights-content" id="rightsContent">
+                <div class="default-content">
+                    <h3>Select a category to explore your rights</h3>
+                    <p>Click on any category above to learn about specific rights and protections in that area.</p>
+                </div>
+
+                <div class="digital-rights rights-category hidden">
+                    <h3>Digital Rights</h3>
+                    <div class="rights-list">
+                        <div class="right-item">
+                            <h4>Right to Digital Privacy</h4>
+                            <p>Your personal data cannot be collected or processed without your consent.</p>
+                        </div>
+                        <div class="right-item">
+                            <h4>Right to Be Forgotten</h4>
+                            <p>You can request removal of your personal data from online platforms.</p>
+                        </div>
+                        <div class="right-item">
+                            <h4>Right to Data Portability</h4>
+                            <p>You can transfer your data from one service to another.</p>
+                        </div>
+                        <div class="right-item">
+                            <h4>Protection from Cyber Crimes</h4>
+                            <p>Legal protection against hacking, phishing, and online fraud.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="consumer-rights rights-category hidden">
+                    <h3>Consumer Rights</h3>
+                    <div class="rights-list">
+                        <div class="right-item">
+                            <h4>Right to Safety</h4>
+                            <p>Protection against hazardous goods and services.</p>
+                        </div>
+                        <div class="right-item">
+                            <h4>Right to Information</h4>
+                            <p>Complete information about products and services.</p>
+                        </div>
+                        <div class="right-item">
+                            <h4>Right to Choose</h4>
+                            <p>Access to variety of goods at competitive prices.</p>
+                        </div>
+                        <div class="right-item">
+                            <h4>Right to Redressal</h4>
+                            <p>Fair settlement of genuine grievances.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
