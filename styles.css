@@ -52,7 +52,6 @@ header {
 .logo h1 {
     font-size: 1.8rem;
     background: linear-gradient(90deg, var(--primary), var(--accent));
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -132,13 +131,12 @@ header {
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
+
 .hero h1 span {
     background: linear-gradient(90deg, var(--primary), var(--accent));
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .hero p {
     font-size: 1.2rem;
@@ -638,301 +636,6 @@ header {
     transform: translateY(-2px);
 }
 
-/* Documentation Page Styles */
-.documentation {
-    padding: 8rem 2rem 4rem;
-    min-height: 100vh;
-}
-
-.doc-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.doc-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.doc-header h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.doc-header p {
-    font-size: 1.2rem;
-    color: #aaaaaa;
-}
-
-.category-filter {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    padding: 0.8rem 1.5rem;
-    background: var(--gray);
-    border: 2px solid transparent;
-    color: var(--light);
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-btn.active, .filter-btn:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
-.documents-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.doc-card {
-    background: var(--gray);
-    padding: 2rem;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.doc-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
-
-.doc-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.doc-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.doc-card p {
-    color: #aaaaaa;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.doc-meta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    color: #888;
-}
-
-.doc-download {
-    width: 100%;
-    padding: 1rem;
-    background: transparent;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 600;
-}
-
-.doc-download:hover {
-    background: var(--primary);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.pdf-viewer-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 2000;
-}
-
-.pdf-modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    background: var(--darker);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.pdf-modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    background: var(--gray);
-    border-bottom: 1px solid #444;
-}
-
-.close-modal {
-    background: none;
-    border: none;
-    color: var(--light);
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pdf-viewer {
-    height: calc(100% - 80px);
-    padding: 2rem;
-    overflow-y: auto;
-}
-
-.pdf-placeholder {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: var(--gray);
-    border-radius: 10px;
-    border: 2px dashed #444;
-}
-
-.pdf-placeholder .pdf-icon {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-}
-
-.pdf-note {
-    font-size: 0.9rem;
-    color: #888;
-    margin-top: 1rem;
-}
-
-/* Rights Page Styles */
-.rights-section {
-    padding: 8rem 2rem 4rem;
-    min-height: 100vh;
-}
-
-.rights-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.rights-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.rights-header h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.rights-header p {
-    font-size: 1.2rem;
-    color: #aaaaaa;
-}
-
-.rights-categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.category-card {
-    background: var(--gray);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.category-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
-
-.category-card .category-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.category-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.category-card p {
-    color: #aaaaaa;
-}
-
-.rights-content {
-    background: var(--gray);
-    padding: 3rem;
-    border-radius: 15px;
-    min-height: 400px;
-}
-
-.default-content {
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-.default-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #aaaaaa;
-}
-
-.rights-category {
-    display: none;
-}
-
-.rights-category.active {
-    display: block;
-}
-
-.rights-list {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.right-item {
-    padding: 1.5rem;
-    background: var(--darker);
-    border-radius: 10px;
-    border-left: 4px solid var(--primary);
-}
-
-.right-item h4 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-}
-
-.right-item p {
-    color: #cccccc;
-    line-height: 1.6;
-}
-
 /* Fraud Alerts Page Styles */
 .fraud-alerts {
     padding: 8rem 2rem 4rem;
@@ -1143,6 +846,534 @@ header {
     overflow-y: auto;
 }
 
+
+/* Documentation Page Styles */
+.documentation {
+    padding: 8rem 2rem 4rem;
+    min-height: 100vh;
+}
+
+.doc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doc-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.doc-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.doc-header p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+.category-filter {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--gray);
+    border: 2px solid transparent;
+    color: var(--light);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.doc-card {
+    background: var(--gray);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.doc-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.doc-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.doc-card p {
+    color: #aaaaaa;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.doc-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.doc-download {
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.doc-download:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pdf-viewer-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+}
+
+.pdf-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: var(--darker);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pdf-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--gray);
+    border-bottom: 1px solid #444;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: var(--light);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-viewer {
+    height: calc(100% - 80px);
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.pdf-placeholder {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--gray);
+    border-radius: 10px;
+    border: 2px dashed #444;
+}
+
+.p {
+  border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.category-card .category-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    color: #aaaaaa;
+}
+
+.rights-content {
+    background: var(--gray);
+    padding: 3rem;
+    border-radius: 15px;
+    min-height: 400px;
+}
+
+.default-content {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.default-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #aaaaaa;
+}
+
+.rights-category {
+    display: none;
+}
+
+.rights-category.active {
+    display: block;
+}
+
+.rights-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.right-item {
+    padding: 1.5rem;
+    background: var(--darker);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.right-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.right-item p {
+    color: #cccccc;
+    line-height: 1.6;
+}df-placeholder .pdf-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.pdf-note {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+}
+
+/* Expandable Sections Styles */
+
+/*new
+/* Add this to your existing CSS to handle more sections smoothly */
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    background: var(--darker);
+}
+
+.expandable-content.active {
+    max-height: 3000px; /* Increased to accommodate more content */
+    padding: 2rem;
+}
+
+/* Optional: Add smooth scrolling for better navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure proper spacing between sections */
+.expandable-section {
+    margin-bottom: 1rem;
+    background: var(--gray);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+*/
+
+.expandable-section {
+    margin-bottom: 1rem;
+    background: var(--gray);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.expandable-section:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.expandable-btn {
+    width: 100%;
+    padding: 2rem;
+    background: var(--gray);
+    border: none;
+    color: var(--light);
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.expandable-btn:hover {
+    background: rgba(108, 99, 255, 0.1);
+}
+
+.expandable-btn.active {
+    background: rgba(108, 99, 255, 0.15);
+    border-bottom: 2px solid var(--primary);
+}
+
+.expandable-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.expandable-btn:hover::before {
+    left: 100%;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-icon {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.expandable-btn.active .btn-icon {
+    transform: scale(1.1);
+    color: var(--primary);
+}
+
+.btn-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--light);
+}
+
+.btn-text p {
+    color: #aaaaaa;
+    margin: 0;
+}
+
+.expand-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color: var(--primary);
+}
+
+.expandable-btn.active .expand-arrow {
+    transform: rotate(180deg);
+}
+
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    background: var(--darker);
+}
+
+.expandable-content.active {
+    max-height: 2000px;
+    padding: 2rem;
+}
+
+.rights-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.right-item {
+    padding: 1.5rem;
+    background: var(--gray);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.right-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.right-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.right-item p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.learn-more {
+    background: var(--primary);
+    color: white;
+}
+
+.learn-more:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+.download-guide {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.download-guide:hover {
+    background: rgba(108, 99, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .expandable-btn {
+        padding: 1.5rem;
+    }
+    
+    .btn-content {
+        gap: 1rem;
+    }
+    
+    .btn-icon {
+        font-size: 2rem;
+    }
+    
+    .btn-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .expandable-content.active {
+        padding: 1.5rem;
+    }
+    
+    .rights-list {
+        gap: 1rem;
+    }
+    
+    .right-item {
+        padding: 1.2rem;
+    }
+    
+    .right-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .action-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .expandable-btn {
+        padding: 1.2rem;
+    }
+    
+    .btn-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .btn-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .expandable-content.active {
+        padding: 1rem;
+    }
+}
+
 /* Footer */
 footer {
     background-color: var(--darker);
@@ -1281,3 +1512,4 @@ footer {
         justify-content: center;
     }
 }
+
