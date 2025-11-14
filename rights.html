@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know Your Rights - Legal Pocket</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <!-- Header -->
@@ -15,7 +15,7 @@
                 <h1>Legal Pocket</h1>
             </div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index1.html">Home</a>
                 <a href="rights.html" class="active">Know Your Rights</a>
                 <a href="fraudalert.html">Fraud Alerts</a>
                 <a href="chatbot.html">AI Assistant</a>
@@ -25,90 +25,420 @@
         </nav>
     </header>
 
-    <!-- Rights Section -->
-    <section class="rights-section">
-        <div class="rights-container">
-            <div class="rights-header">
-                <h2>Know Your Rights</h2>
-                <p>Understanding your legal rights is the first step toward protection and justice</p>
-            </div>
+   <!-- Rights Section -->
+<section class="rights-section">
+    <div class="rights-container">
+        <div class="rights-header">
+            <h2>Know Your Rights</h2>
+            <p>Understanding your legal rights is the first step toward protection and justice</p>
+        </div>
 
-            <div class="rights-categories">
-                <div class="category-card" onclick="showRights('digital')">
-                    <div class="category-icon">💻</div>
-                    <h3>Digital Rights</h3>
-                    <p>Your rights in the digital world</p>
-                </div>
-                <div class="category-card" onclick="showRights('consumer')">
-                    <div class="category-icon">🛒</div>
-                    <h3>Consumer Rights</h3>
-                    <p>Protection as a consumer</p>
-                </div>
-                <div class="category-card" onclick="showRights('privacy')">
-                    <div class="category-icon">🔒</div>
-                    <h3>Privacy Rights</h3>
-                    <p>Your right to privacy</p>
-                </div>
-                <div class="category-card" onclick="showRights('financial')">
-                    <div class="category-icon">💰</div>
-                    <h3>Financial Rights</h3>
-                    <p>Banking and financial protection</p>
-                </div>
-            </div>
-
-            <div class="rights-content" id="rightsContent">
-                <div class="default-content">
-                    <h3>Select a category to explore your rights</h3>
-                    <p>Click on any category above to learn about specific rights and protections in that area.</p>
-                </div>
-
-                <div class="digital-rights rights-category hidden">
-                    <h3>Digital Rights</h3>
-                    <div class="rights-list">
-                        <div class="right-item">
-                            <h4>Right to Digital Privacy</h4>
-                            <p>Your personal data cannot be collected or processed without your consent.</p>
-                        </div>
-                        <div class="right-item">
-                            <h4>Right to Be Forgotten</h4>
-                            <p>You can request removal of your personal data from online platforms.</p>
-                        </div>
-                        <div class="right-item">
-                            <h4>Right to Data Portability</h4>
-                            <p>You can transfer your data from one service to another.</p>
-                        </div>
-                        <div class="right-item">
-                            <h4>Protection from Cyber Crimes</h4>
-                            <p>Legal protection against hacking, phishing, and online fraud.</p>
-                        </div>
+        <!-- Right to Equality (Articles 14–18) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="equality">
+                <div class="btn-content">
+                    <div class="btn-icon">⚖️</div>
+                    <div class="btn-text">
+                        <h3>Right to Equality (Articles 14–18)</h3>
+                        <p>Equal treatment under the law</p>
                     </div>
                 </div>
-
-                <div class="consumer-rights rights-category hidden">
-                    <h3>Consumer Rights</h3>
-                    <div class="rights-list">
-                        <div class="right-item">
-                            <h4>Right to Safety</h4>
-                            <p>Protection against hazardous goods and services.</p>
-                        </div>
-                        <div class="right-item">
-                            <h4>Right to Information</h4>
-                            <p>Complete information about products and services.</p>
-                        </div>
-                        <div class="right-item">
-                            <h4>Right to Choose</h4>
-                            <p>Access to variety of goods at competitive prices.</p>
-                        </div>
-                        <div class="right-item">
-                            <h4>Right to Redressal</h4>
-                            <p>Fair settlement of genuine grievances.</p>
-                        </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="equality-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Equality before law</h4>
+                        <p>No person is above the law — whether rich or poor, powerful or ordinary, everyone is governed by the same legal principles.</p>
                     </div>
+                    <div class="right-item">
+                        <h4>Freedom from Discrimination</h4>
+                        <p>No discrimination based on religion, race, caste, sex, or place of birth in public places and employment.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Equality of opportunity in public employment</h4>
+                        <p>Equal access to government jobs and public services without any discrimination.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Abolition of untouchability</h4>
+                        <p>Prohibition of the practice of untouchability in any form, making it a punishable offense.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Abolition of titles</h4>
+                        <p>No titles shall be conferred by the State, except military and academic distinctions.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
                 </div>
             </div>
         </div>
-    </section>
 
-    <script src="script.js"></script>
+        <!-- Right to Freedom (Articles 19–22) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="freedom">
+                <div class="btn-content">
+                    <div class="btn-icon">🗽</div>
+                    <div class="btn-text">
+                        <h3>Right to Freedom (Articles 19–22)</h3>
+                        <p>Fundamental freedoms for citizens</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="freedom-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Freedom of speech and expression</h4>
+                        <p>Right to freely express opinions and ideas without censorship, subject to reasonable restrictions.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom to assemble peacefully</h4>
+                        <p>Right to assemble peacefully without arms for lawful purposes.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom to form associations/unions</h4>
+                        <p>Right to form associations, unions, or cooperative societies.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom to move freely within India</h4>
+                        <p>Right to move freely throughout the territory of India.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom to reside anywhere in India</h4>
+                        <p>Right to reside and settle in any part of the country.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom to practice any profession</h4>
+                        <p>Right to practice any profession, or to carry on any occupation, trade or business.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Protection of life and personal liberty (Article 21)</h4>
+                        <p>No person shall be deprived of his life or personal liberty except according to procedure established by law.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Rights of arrested persons</h4>
+                        <p>Protection against arrest and detention in certain cases, including right to be informed of grounds of arrest.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Against Exploitation (Articles 23–24) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="exploitation">
+                <div class="btn-content">
+                    <div class="btn-icon">🚫</div>
+                    <div class="btn-text">
+                        <h3>Right Against Exploitation (Articles 23–24)</h3>
+                        <p>Protection from exploitation</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="exploitation-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Prohibition of human trafficking</h4>
+                        <p>Complete ban on trafficking in human beings and forced labor.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Prohibition of forced labor</h4>
+                        <p>No person can be forced to provide labor without payment or under compulsion.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Prohibition of child labor</h4>
+                        <p>Children below 14 years cannot be employed in factories, mines, or hazardous occupations.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right to Freedom of Religion (Articles 25–28) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="religion">
+                <div class="btn-content">
+                    <div class="btn-icon">🕊️</div>
+                    <div class="btn-text">
+                        <h3>Right to Freedom of Religion (Articles 25–28)</h3>
+                        <p>Religious freedom and secularism</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="religion-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Freedom of conscience and religion</h4>
+                        <p>Freedom to profess, practice, and propagate any religion according to one's conscience.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom to manage religious affairs</h4>
+                        <p>Right to establish and maintain religious institutions and manage religious affairs.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>No compulsory religious instruction</h4>
+                        <p>No religious instruction shall be provided in state-funded educational institutions.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Freedom from religious taxes</h4>
+                        <p>No person shall be compelled to pay taxes for promotion of any particular religion.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cultural and Educational Rights (Articles 29–30) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="cultural">
+                <div class="btn-content">
+                    <div class="btn-icon">🎓</div>
+                    <div class="btn-text">
+                        <h3>Cultural and Educational Rights (Articles 29–30)</h3>
+                        <p>Protection of cultural and educational interests</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="cultural-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Protection of language and culture</h4>
+                        <p>Right of any group of citizens to conserve their distinct language, script, or culture.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right of minorities to establish educational institutions</h4>
+                        <p>Minorities have the right to establish and administer educational institutions of their choice.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>No discrimination in educational institutions</h4>
+                        <p>No citizen shall be denied admission to any educational institution maintained by the State on grounds only of religion, race, caste, language or any of them.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right to Constitutional Remedies (Article 32) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="remedies">
+                <div class="btn-content">
+                    <div class="btn-icon">⚡</div>
+                    <div class="btn-text">
+                        <h3>Right to Constitutional Remedies (Article 32)</h3>
+                        <p>The "heart and soul" of the Constitution</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="remedies-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Right to approach Supreme Court</h4>
+                        <p>The right to move the Supreme Court for enforcement of fundamental rights through appropriate proceedings.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Power of Supreme Court to issue writs</h4>
+                        <p>Supreme Court can issue directions, orders or writs including habeas corpus, mandamus, prohibition, quo warranto and certiorari.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Suspension of rights during emergency</h4>
+                        <p>This right cannot be suspended except as provided by the Constitution during emergency.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Dr. B. R. Ambedkar's view</h4>
+                        <p>Called this the "heart and soul" of the Constitution as it makes other fundamental rights meaningful and enforceable.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right to Privacy (Judicial Interpretation) -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="privacy">
+                <div class="btn-content">
+                    <div class="btn-icon">🔒</div>
+                    <div class="btn-text">
+                        <h3>Right to Privacy (Judicial Interpretation)</h3>
+                        <p>Recognized under Article 21</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="privacy-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Recognition as fundamental right</h4>
+                        <p>Recognized as a fundamental right by Supreme Court in 2017 under Article 21 (Right to Life and Personal Liberty).</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Protection of personal data</h4>
+                        <p>Right to protect personal information, data privacy, and control over personal data.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Bodily autonomy and private life</h4>
+                        <p>Protection of bodily autonomy, personal choices, and private life from state and non-state interference.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Digital privacy</h4>
+                        <p>Extension of privacy rights to digital spaces, protecting online activities and digital communications.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your existing sections (Digital, Consumer, Financial Rights) -->
+        <!-- Digital Rights Expandable Section -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="digital">
+                <div class="btn-content">
+                    <div class="btn-icon">💻</div>
+                    <div class="btn-text">
+                        <h3>Digital Rights</h3>
+                        <p>Your rights in the digital world</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="digital-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Right to Digital Privacy</h4>
+                        <p>Your personal data cannot be collected or processed without your explicit consent. Organizations must clearly state how they use your data and obtain your permission before collecting it.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Be Forgotten</h4>
+                        <p>You can request the removal of your personal data from online platforms and search engines when the data is no longer necessary or you withdraw your consent.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Data Portability</h4>
+                        <p>You have the right to receive your personal data in a structured, commonly used format and transfer it to another service provider without hindrance.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Protection from Cyber Crimes</h4>
+                        <p>Legal protection against hacking, phishing, identity theft, online fraud, and other cyber crimes. Authorities are obligated to investigate and prosecute such offenses.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Digital Access</h4>
+                        <p>Equal access to digital services and information, regardless of disability, location, or socioeconomic status. Service providers must ensure accessibility for all users.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consumer Rights Expandable Section -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="consumer">
+                <div class="btn-content">
+                    <div class="btn-icon">🛒</div>
+                    <div class="btn-text">
+                        <h3>Consumer Rights</h3>
+                        <p>Protection as a consumer</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="consumer-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Right to Safety</h4>
+                        <p>Protection against hazardous goods, services, and unfair trade practices. Products must meet safety standards and not pose risks to health or property.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Information</h4>
+                        <p>Complete and accurate information about products and services, including price, quality, potency, purity, and standard. No misleading advertisements or false claims.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Choose</h4>
+                        <p>Access to a variety of goods and services at competitive prices. Freedom to select from multiple options without coercion or restrictive trade practices.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Redressal</h4>
+                        <p>Fair settlement of genuine grievances through consumer courts and forums. Compensation for unsatisfactory services or defective products.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Consumer Education</h4>
+                        <p>Knowledge about consumer rights and responsibilities. Awareness programs to empower consumers to make informed decisions.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Financial Rights Expandable Section -->
+        <div class="expandable-section">
+            <button class="expandable-btn" data-section="financial">
+                <div class="btn-content">
+                    <div class="btn-icon">💰</div>
+                    <div class="btn-text">
+                        <h3>Financial Rights</h3>
+                        <p>Banking and financial protection</p>
+                    </div>
+                </div>
+                <div class="expand-arrow">▼</div>
+            </button>
+            <div class="expandable-content" id="financial-content">
+                <div class="rights-list">
+                    <div class="right-item">
+                        <h4>Right to Fair Banking</h4>
+                        <p>Transparent banking practices, clear terms and conditions, and fair treatment from financial institutions. Protection from hidden fees and unfair charges.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Credit Information</h4>
+                        <p>Access to your credit reports and scores. Right to dispute inaccurate information and have it corrected in a timely manner.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Financial Privacy</h4>
+                        <p>Confidentiality of your financial transactions and account information. Banks cannot disclose your financial details without legal requirement or your consent.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Right to Grievance Redressal</h4>
+                        <p>Access to banking ombudsman and other dispute resolution mechanisms for timely resolution of complaints against financial institutions.</p>
+                    </div>
+                    <div class="right-item">
+                        <h4>Protection from Fraud</h4>
+                        <p>Banks and financial institutions are responsible for implementing security measures to protect customers from fraud and unauthorized transactions.</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn learn-more">Learn More</button>
+                    <button class="action-btn download-guide">Download Guide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="rightsscript.js"></script>
 </body>
 </html>
